@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.3.2'
     id 'io.spring.dependency-management' version '1.1.6'
+    id 'org.springdoc.openapi-gradle-plugin' version "1.9.0"
 }
 
 group = 'dev.theduardomaciel'
@@ -20,10 +21,21 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.0.3'
+
     runtimeOnly 'com.h2database:h2'
     runtimeOnly 'org.postgresql:postgresql'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+// Necessário para que o Railway saiba qual é a classe principal
+tasks.jar {
+    manifest {
+        attributes["Main-Class"] = "dev.theduardomaciel.javaapi.Application"
+    }
 }
 
 tasks.named('test') {
