@@ -12,7 +12,7 @@ API RESTFul com Java e Spring Boot destinada ao funcionamento das plataformas (A
 
 O projeto visa a criação de um ambiente em que a comunidade do jogo mobile Beatstar possa se reunião, compartilhando e descobrindo novas músicas enquanto interagem com outros usuários.
 
-> [!NOTE]
+> [!NOTE]  
 > O design do frontend do projeto está disponível no [Figma](https://www.figma.com/design/2mWKQhZ8wsXQQEzBUDbFk5/Beatstar-Community?node-id=0-1&t=TP0OLPH97x2pLUsr-1)
 
 ## ✨ Tecnologias
@@ -60,6 +60,7 @@ O projeto visa a criação de um ambiente em que a comunidade do jogo mobile Bea
 
 Este projeto ainda está em desenvolvimento e as próximas etapas consistem em:
 
+- [ ] Definir as entidades do banco de dados
 - [ ] Implementar CRUD de usuários
 - [ ] Implementar CRUD de charts
 - [ ] Implementar CRUD de músicas
