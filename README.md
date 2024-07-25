@@ -1,16 +1,27 @@
-# API RESTFul com Java e Spring Boot
+# Beatstar Community API
 
-## Descrição
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/.github/cover.png">
+  <source media="(prefers-color-scheme: light)" srcset="/.github/cover_light.png">
+  <img alt="Main project cover" src="/.github/cover_light.png">
+</picture>
 
-API RESTFul com Java e Spring Boot
+## 📝 Descrição
 
-## Tecnologias
+API RESTFul com Java e Spring Boot destinada ao funcionamento das plataformas (Android, Web) do, ainda em desenvolvimento, projeto Beatstar Community.
 
-- Java 22
-- Spring Boot 3.3.2
-- Gradle
+O projeto visa a criação de um ambiente em que a comunidade do jogo mobile Beatstar possa se reunião, compartilhando e descobrindo novas músicas enquanto interagem com outros usuários.
 
-## Arquitetura
+> [!NOTE]
+> O design do frontend do projeto está disponível no [Figma](https://www.figma.com/design/2mWKQhZ8wsXQQEzBUDbFk5/Beatstar-Community?node-id=0-1&t=TP0OLPH97x2pLUsr-1)
+
+## ✨ Tecnologias
+
+- `[Base]` Java 22
+- `[Framework]` Spring Boot 3.3.2
+- `[Dependências]` Gradle
+
+## 🏗️ Arquitetura
 
 - Controller
 - Service
@@ -22,13 +33,13 @@ API RESTFul com Java e Spring Boot
 > **DTO** (Data Transfer Object) é um padrão de projeto cujo objetivo é transferir dados entre subsistemas de um software.  
 > No nosso caso, utilizaremos para transportar dados entre diferentes camadas da aplicação sem expor as entidades do banco de dados diretamente.
 
-## Infraestrutura
+## ☁️ Infraestrutura
 
 - Banco de Dados: PostgreSQL
 - Hospedagem: Railway
 - ~~CI/CD: GitHub Actions~~
 
-> [!INFO]
+> [!INFO]  
 > **Procfile**: arquivo que informa ao Railway como iniciar a aplicação.
 
 > [!WARNING]
@@ -38,3 +49,20 @@ API RESTFul com Java e Spring Boot
 > ```properties
 > distributionUrl=https\://services.gradle.org/distributions/gradle-7.6.1-bin.zip
 > ```
+
+## 🚧 Roadmap
+
+Este projeto ainda está em desenvolvimento e as próximas etapas consistem em:
+
+- [ ] Implementar CRUD de usuários
+- [ ] Implementar CRUD de charts
+- [ ] Implementar CRUD de músicas
+- [ ] Implementar CI/CD
+- [ ] Documentar endpoints
+- [ ] Implementar testes unitários
+- [ ] Implementar testes de integração
+- [ ] Implementar autenticação
+
+## 📝 Licença
+
+Este projeto utiliza a MIT License. Veja o arquivo de [LICENÇA](LICENSE) para mais detalhes.
