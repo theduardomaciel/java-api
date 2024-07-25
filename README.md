@@ -23,15 +23,22 @@ O projeto visa a criação de um ambiente em que a comunidade do jogo mobile Bea
 
 ## 🏗️ Arquitetura
 
-- Controller
-- Service
-- Repository
-- Model
-- DTO
+- **Controller:**  
+  Utilizado para definir os endpoints da API  
 
-> [!INFO]  
+- **Service:**  
+  Utilizado para definir a lógica de negócio da aplicação
+
+- **Repository:** 
+  Utilizado para definir as operações de CRUD no banco de dados
+
+- **Model:**  
+  Utilizado para definir as entidades do banco de dados
+
+- **DTO:**  
+  Utilizado para não expor todos os campos das entidades do banco de dados diretamente
+
 > **DTO** (Data Transfer Object) é um padrão de projeto cujo objetivo é transferir dados entre subsistemas de um software.  
-> No nosso caso, utilizaremos para transportar dados entre diferentes camadas da aplicação sem expor as entidades do banco de dados diretamente.
 
 ## ☁️ Infraestrutura
 
@@ -39,7 +46,6 @@ O projeto visa a criação de um ambiente em que a comunidade do jogo mobile Bea
 - Hospedagem: Railway
 - ~~CI/CD: GitHub Actions~~
 
-> [!INFO]  
 > **Procfile**: arquivo que informa ao Railway como iniciar a aplicação.
 
 > [!WARNING]
